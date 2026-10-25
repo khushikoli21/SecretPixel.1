@@ -1,0 +1,6 @@
+{
+  "name": "SecretPixel: AES Image Steganography",
+  "description": "Professional cybersecurity operations console combining AES-256-GCM authenticated encryption with LSB image steganography for private in-memory message hiding and extraction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

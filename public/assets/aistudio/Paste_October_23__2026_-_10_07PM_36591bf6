@@ -1,0 +1,1077 @@
+# MASTER PROMPT: SecretPixel — Premium Cybersecurity Web Application
+
+## 1. YOUR ROLE
+
+Act as a senior UI/UX designer, cybersecurity product designer, frontend engineer, JavaScript developer, and accessibility specialist.
+
+Design and develop a complete, polished, responsive, fully interactive frontend web application for my third-year B.Tech Information Technology Cryptography and Network Security (CNS) microproject.
+
+The application must look like a professional cybersecurity SaaS product: elegant, futuristic, trustworthy, visually impressive, easy to use, and suitable for a college project demonstration.
+
+Do not create only a landing page, wireframe, static mockup, or dashboard full of decorative elements. Build the complete frontend experience with working interactions and a clearly organized codebase.
+
+---
+
+## 2. PROJECT INFORMATION
+
+**Project Name:** SecretPixel
+
+**Project Title:** SecretPixel: AES-Based Image Steganography for Secure Message Hiding
+
+**Domain:** Cryptography, Network Security, Image Steganography, Secure Communication
+
+**Project Type:** Educational cybersecurity web application
+
+**Primary Goal:**
+
+SecretPixel allows a user to encrypt a confidential text message using a password-derived AES key, hide the encrypted message inside an ordinary image using Least Significant Bit (LSB) steganography, download the resulting image, and later extract and decrypt the hidden message using the correct password.
+
+The project demonstrates two complementary security techniques:
+
+1. Cryptography protects the contents of the message.
+2. Steganography conceals the presence of the encrypted message inside an image.
+
+The website must explain that the project is an educational prototype and does not guarantee undetectable steganography or complete protection against every attack.
+
+### Main user journey
+
+Sender:
+Enter a message → Enter a password → Upload a cover image → Validate capacity → Encrypt the message → Embed the ciphertext into image pixels → Preview the result → Download the generated PNG.
+
+Receiver:
+Upload the generated PNG → Enter the original password → Extract the hidden payload → Authenticate and decrypt it → Display the original message.
+
+The core experience must be simple enough for a first-time user.
+
+---
+
+## 3. STRICT PROJECT REQUIREMENTS
+
+Follow these requirements carefully.
+
+- Maintain the identity and functionality of SecretPixel as an AES-based image steganography project.
+- Use HTML5, CSS3, and JavaScript for the website.
+- Use semantic HTML elements.
+- Demonstrate forms, tables, lists, hyperlinks, the CSS box model, Flexbox, media queries, DOM manipulation, event handling and validation.
+- Include images, video and audio media elements.
+- Include a registration form and an events/testing table.
+- Implement responsive layouts for mobile, tablet and desktop.
+- Use a clear folder structure and readable, commented code.
+- Make all navigation links, buttons, upload controls, forms and interactions functional.
+- Include meaningful loading, success, empty, error and disabled states.
+- Do not create fake success messages, fake encryption, fake decryption, fake security scores or simulated results that look like real computations.
+- Do not claim a feature works unless it is actually implemented.
+- Do not invent research citations, security certifications or compliance claims.
+- Do not change the project into an unrelated AI, blockchain or password-manager product.
+- Do not require a backend for the core message-hiding functionality.
+- Do not transmit secret messages, passwords or images to an external server.
+- Do not store passwords or confidential messages in local storage, session storage, URLs or analytics.
+- Use no unnecessary account system, database, paid API or external AI service.
+
+If a requested feature cannot be implemented correctly, clearly identify it rather than pretending it works.
+
+---
+
+## 4. VISUAL DESIGN DIRECTION
+
+Create a premium, distinctive cybersecurity aesthetic.
+
+The website should resemble a polished privacy engineering product, not a generic college website, basic bootstrap template or stereotypical hacker screen.
+
+### Visual identity
+
+Product personality:
+- Secure
+- Intelligent
+- Precise
+- Modern
+- Minimal
+- Trustworthy
+- Technically sophisticated
+- Approachable for non-technical users
+
+### Colour palette
+
+Use a consistent dark cybersecurity theme.
+
+- Main background: #080B14
+- Secondary background: #0D1220
+- Card background: #111827
+- Elevated card background: #161F32
+- Primary violet: #8B5CF6
+- Electric blue: #38BDF8
+- Accent indigo: #6366F1
+- Primary text: #F8FAFC
+- Secondary text: #A5B4C7
+- Muted text: #718096
+- Success: #34D399
+- Warning: #FBBF24
+- Error: #FB7185
+- Border: rgba(148, 163, 184, 0.16)
+
+Use violet-to-blue gradients selectively for primary actions, the brand icon, active states and key visual elements.
+
+Avoid making the entire interface glow. The visual effects should be subtle and intentional.
+
+### Background and atmosphere
+
+Create a sophisticated dark background using a combination of:
+- Very subtle pixel-grid patterns
+- Fine geometric lines
+- Soft radial violet and blue gradients
+- Sparse floating particles, if implemented efficiently
+- A subtle pixel-dissolve motif
+- Gentle light reflections on selected cards
+
+Background effects must never reduce text readability or interfere with interactions.
+
+Do not use excessive neon, flashing lights, giant glowing borders, random hacker code, skulls, cartoon hackers or meaningless terminal animations.
+
+### Typography
+
+Use a modern sans-serif typeface such as Inter.
+
+Use a clear typographic hierarchy:
+- Large, confident hero headline
+- Medium section headings
+- Clear card titles
+- Comfortable body text
+- Small muted labels for metadata
+- Monospaced typography only for technical values, file metadata and small status indicators
+
+Use responsive font sizes and comfortable line heights.
+
+### Component styling
+
+- Rounded cards with approximately 14–22px corner radii.
+- Thin, low-contrast borders.
+- Subtle shadows.
+- Balanced spacing.
+- Clear alignment.
+- Consistent icon sizes.
+- Well-defined focus states.
+- Elegant buttons with clear hover, active and disabled states.
+- Smooth transitions without excessive motion.
+- High-contrast form controls.
+
+Use Lucide icons or a consistent professional icon library if available. Never use random emojis as the main interface icons.
+
+Do not use alert() for normal UI feedback. Create polished inline alerts, toast messages and status panels instead.
+
+---
+
+## 5. APPLICATION ARCHITECTURE
+
+Build a single-page application with a persistent navigation bar and multiple clearly separated sections.
+
+Use smooth scrolling and active navigation states.
+
+The main navigation should contain:
+
+- Brand logo: SecretPixel
+- Home
+- How It Works
+- Hide Message
+- Extract Message
+- Features
+- About
+- A prominent “Launch Workspace” button
+
+On mobile, use an accessible collapsible navigation menu.
+
+The active navigation item should be visually identifiable.
+
+Include a compact footer with the project name, educational disclaimer, navigation links and academic project information.
+
+Avoid creating too many unrelated pages. Keep the encryption and extraction workspace as the central focus.
+
+---
+
+## 6. LOGO AND BRANDING
+
+Create a distinctive SecretPixel brand identity.
+
+The logo should combine the concept of a pixel with a shield, lock or concealed message.
+
+Design a simple geometric symbol using a small cluster of square pixels integrated into a shield or secure container.
+
+Use a violet-blue gradient for the symbol.
+
+The wordmark should read:
+
+SecretPixel
+
+The word “Secret” and “Pixel” may have slightly different text treatments, but the name must remain readable.
+
+The logo should work in:
+- Navigation
+- Hero section
+- Footer
+- Small favicon
+
+Avoid a complicated logo that is difficult to reproduce.
+
+---
+
+## 7. SECTION ONE: HOME / LANDING PAGE
+
+Create a visually impressive first screen.
+
+### Navigation bar
+
+Use a clean dark navigation bar with a subtle border underneath.
+
+Keep the brand on the left and navigation links on the right.
+
+The bar should remain usable while scrolling.
+
+### Hero section
+
+Use a balanced two-column layout on desktop.
+
+Left column:
+
+Small eyebrow label:
+“CRYPTography • PRIVACY • IMAGE STEGANOGRAPHY”
+
+Use consistent capitalization in the actual design.
+
+Headline:
+
+“Hide Your Message.
+Protect Your Privacy.”
+
+Highlight “Protect Your Privacy” with a restrained violet-blue gradient.
+
+Supporting text:
+
+“Encrypt confidential messages and conceal them inside ordinary images. SecretPixel combines AES encryption with image steganography to demonstrate an additional layer of privacy for digital communication.”
+
+Primary CTA:
+“Start Hiding a Message”
+
+Secondary CTA:
+“Explore How It Works”
+
+Add three compact trust-related feature labels:
+- AES Encryption
+- Pixel-Level Steganography
+- Browser-Based Processing
+
+Do not use absolute claims such as “100% secure” or “impossible to detect.”
+
+Right column:
+
+Create a custom product illustration or a realistic UI composition that visually explains SecretPixel.
+
+Show:
+- A sample image thumbnail
+- A subtle pixel-grid overlay
+- A secure encrypted-payload indicator
+- A transition from the original image to a generated image
+- Small technical labels such as “ENCRYPTED PAYLOAD” and “PNG OUTPUT”
+- A restrained glowing shield or pixel icon
+
+The illustration must reinforce the actual product workflow.
+
+Do not use an irrelevant stock photo of a hacker.
+
+### Hero supporting content
+
+Under the hero, include three compact feature cards:
+
+1. Encrypt — Protect the message using a password-derived AES key.
+2. Conceal — Embed the encrypted payload inside image pixel data.
+3. Recover — Extract and decrypt the message using the correct password.
+
+Add a subtle scroll cue if appropriate.
+
+---
+
+## 8. SECTION TWO: HOW IT WORKS
+
+Create a clear, attractive explanation of the system.
+
+Show the complete workflow as a horizontal sequence on desktop and a vertical sequence on mobile.
+
+Step 1: Write Your Message
+The sender enters the confidential text.
+
+Step 2: Encrypt with AES
+The message is encrypted using a password-derived key.
+
+Step 3: Hide in Pixels
+The ciphertext is embedded using LSB substitution.
+
+Step 4: Share the PNG
+The sender downloads and shares the generated image.
+
+Step 5: Extract and Decrypt
+The receiver extracts the payload and decrypts it using the same password.
+
+Include a clean visual diagram showing:
+
+Plaintext → AES Encryption → Ciphertext → LSB Embedding → Stego-Image
+
+For the receiving process, show the reverse direction.
+
+Include short, beginner-friendly explanations of:
+- AES
+- Password-based key derivation
+- Random salt
+- Initialization vector
+- LSB substitution
+- Stego-image
+
+Clearly distinguish encryption from steganography.
+
+Explain that encryption protects message contents while steganography attempts to conceal the presence of the message.
+
+---
+
+## 9. SECTION THREE: HIDE MESSAGE WORKSPACE
+
+This is the most important part of the application.
+
+Build a complete and polished interactive workspace.
+
+### Layout
+
+On desktop:
+- Main workspace on the left.
+- Image preview and technical details on the right.
+
+On mobile:
+- Stack the workspace vertically.
+- Keep primary actions full-width.
+
+Use a step-based layout or clearly labelled form groups.
+
+### Step A: Secret message
+
+Create a labelled textarea with:
+- Placeholder: “Type the message you want to protect...”
+- Character counter
+- Clear button
+- Optional show/hide message preview control
+- Sensible maximum message length
+- Accessible labels and instructions
+
+Never log the secret message to the console.
+
+### Step B: Password
+
+Create:
+- Password field
+- Show/hide password toggle
+- Confirm-password field
+- Password-strength guidance
+- A short password-handling note
+
+Do not claim that a weak password becomes strong merely because PBKDF2 is used.
+
+Do not store or transmit the password.
+
+Use the password only in memory while performing the operation.
+
+### Step C: Cover image upload
+
+Create a professional drag-and-drop upload card.
+
+The card must include:
+- Upload icon
+- “Drop your cover image here”
+- “or browse files”
+- Supported-format information
+- Maximum file-size information
+- Selected filename
+- Image dimensions
+- File size
+- Remove/replace image button
+
+Accept supported raster images that can be decoded and processed by the browser.
+
+For the most reliable initial implementation, prioritize PNG and JPEG input.
+
+Validate that the file is an actual decodable image, not just a file with a renamed extension.
+
+Explain that the final generated output should be PNG.
+
+Display a real image preview after upload.
+
+Never upload the user's cover image to an external service.
+
+### Step D: Capacity estimator
+
+Calculate the available LSB payload capacity from the image's actual dimensions.
+
+For a 24-bit RGB image using one LSB per channel:
+
+Raw capacity in bytes = floor(width × height × 3 / 8).
+
+Account for the payload header, salt, IV, authentication tag, ciphertext and any other metadata in the actual implementation.
+
+Clearly distinguish raw capacity from usable capacity.
+
+Display:
+- Image width and height
+- Estimated raw capacity
+- Actual maximum usable payload
+- Current payload size
+- Capacity utilization percentage
+- A visual progress bar
+
+Update these values when the user changes the message or selected image.
+
+Never display invented capacity values.
+
+Reject embedding if the complete payload does not fit.
+
+### Step E: Encrypt and hide
+
+Primary button:
+“Encrypt & Hide Message”
+
+Before the operation, validate:
+- Message is not empty.
+- Cover image is valid.
+- Password is present.
+- Password confirmation matches.
+- Image has sufficient capacity.
+- All required cryptographic inputs are available.
+
+During processing:
+- Disable duplicate submissions.
+- Show an actual progress indicator only if progress can be measured.
+- Otherwise use a simple loading indicator.
+- Display clear status text.
+
+After successful processing:
+- Show the generated image preview.
+- Display a success message.
+- Display actual image dimensions and output file size.
+- Provide a prominent “Download Stego-Image” button.
+- Provide “Start Again” and “Go to Extraction” actions.
+
+Generate a genuine downloadable PNG that contains the embedded encrypted payload.
+
+Do not produce an unchanged image and claim that the message was hidden.
+
+Do not show a success state if embedding failed.
+
+### Step F: Output preview
+
+Show the generated stego-image in a polished preview card.
+
+Include:
+- Generated PNG preview
+- Download button
+- File details
+- Optional side-by-side original and generated image comparison
+- A short explanation of why the images should look visually similar
+
+If the project includes MSE and PSNR, calculate them from the actual original and generated pixel data.
+
+Do not fabricate visual quality metrics.
+
+If image dimensions differ or the comparison is unavailable, explain that instead of displaying false results.
+
+---
+
+## 10. SECTION FOUR: EXTRACT MESSAGE WORKSPACE
+
+Create a separate, visually consistent receiver interface.
+
+Make it easy to understand even for a first-time user.
+
+### Upload area
+
+Allow the user to:
+- Drag and drop a previously generated stego-image.
+- Browse and select a PNG.
+- Preview the selected image.
+- View filename, dimensions and file size.
+- Remove or replace the image.
+
+### Password field
+
+Include:
+- Password input
+- Show/hide toggle
+- Clear instructions
+
+The interface must tell the user to enter the same password that was used during encryption.
+
+### Extraction process
+
+Primary button:
+“Extract & Decrypt”
+
+The process must genuinely:
+1. Decode the uploaded image.
+2. Extract the stored payload length and data.
+3. Validate the payload format and bounds.
+4. Recover the encryption metadata.
+5. Derive the encryption key from the password and stored salt.
+6. Decrypt and authenticate the ciphertext.
+7. Display the plaintext only after successful authentication.
+
+Never expose partially decrypted or unauthenticated plaintext.
+
+### Successful result
+
+Display a result card with:
+- Success icon
+- “Message Recovered Successfully”
+- Recovered message in a readable text panel
+- Copy Message button
+- Clear Result button
+- Optional character count
+
+The copy button must copy the actual recovered text.
+
+### Error states
+
+Provide separate, understandable messages for:
+- No image selected
+- Unsupported image
+- Invalid payload
+- Missing payload header
+- Corrupted image data
+- Wrong password or authentication failure
+- Incomplete or truncated payload
+
+Do not falsely claim it is always possible to distinguish a wrong password from corrupted ciphertext.
+
+Do not display the original message unless decryption and authentication succeed.
+
+---
+
+## 11. CRYPTOGRAPHIC IMPLEMENTATION REQUIREMENTS
+
+Use the browser's native Web Crypto API wherever supported.
+
+Preferred design:
+- AES-GCM for authenticated encryption.
+- PBKDF2 with SHA-256 for password-based key derivation.
+- A cryptographically secure random salt.
+- A fresh random 96-bit IV for each encryption operation.
+- A suitable PBKDF2 iteration count selected according to current security guidance and browser performance.
+- A consistent, versioned binary payload format.
+- A fixed, documented header that identifies the payload format and length.
+- Explicit validation of all extracted lengths and offsets.
+- A suitable AES-GCM authentication tag.
+- No hard-coded password or encryption key.
+- No custom implementation of AES.
+
+The derived key must not be written to persistent storage.
+
+The salt and IV are not secret and must be stored with the payload so the receiver can reproduce the key and decrypt the message.
+
+Do not reuse an AES-GCM IV with the same key.
+
+### Payload format
+
+Define a clear and versioned payload structure.
+
+It should contain all information needed for extraction, including:
+- A recognizable magic signature
+- Payload-format version
+- Necessary payload length information
+- Salt
+- IV
+- Ciphertext including the authentication tag
+
+Choose explicit byte lengths and byte order.
+
+Use a length header that can safely represent the intended payload size.
+
+Ensure the decoder validates header values and rejects impossible or malicious lengths before allocating large buffers.
+
+The embedding algorithm must store the payload bits deterministically, and the extraction algorithm must read them in precisely the same order.
+
+The header itself must also be recoverable using a documented approach.
+
+### LSB implementation
+
+Use Canvas and image pixel data to implement LSB substitution.
+
+For each payload bit:
+- Read a suitable RGB channel.
+- Replace only its least significant bit.
+- Preserve the remaining bits.
+- Use a deterministic traversal order.
+- Extract bits in the exact same order.
+
+Avoid changing alpha values.
+
+Handle browser canvas limitations and invalid pixel data safely.
+
+Create a PNG output so the embedded data survives normal lossless file export.
+
+Never use JPEG as the output format for the hidden payload.
+
+If the cover image is JPEG, decode it to pixels and encode the resulting stego-image as PNG.
+
+Warn that resizing, recompression, cropping, filtering and many social-media upload pipelines may destroy hidden payload bits.
+
+### Security limitations
+
+Add an honest educational disclaimer.
+
+Explain that:
+- A strong encryption algorithm does not guarantee an unbreakable password.
+- PBKDF2 slows password guessing but does not eliminate it.
+- LSB steganography may be detectable by statistical analysis.
+- Image editing and lossy compression can destroy hidden data.
+- The tool does not provide identity verification or secure password exchange.
+- The password must be communicated to the intended receiver through a separate secure channel.
+
+Never describe this prototype as military-grade, unhackable or completely undetectable.
+
+---
+
+## 12. SECTION FIVE: FEATURES
+
+Design a professional grid of feature cards.
+
+Include:
+
+### AES Encryption
+Encrypt the message before embedding it in the image.
+
+### Image Steganography
+Conceal ciphertext within image pixel data using LSB substitution.
+
+### Password-Based Key Derivation
+Derive an encryption key from a password using PBKDF2 and a random salt.
+
+### Capacity Validation
+Check whether the complete encrypted payload fits inside the chosen image.
+
+### Secure Payload Authentication
+Use AES-GCM authentication to detect changes to the encrypted payload.
+
+### PNG Export
+Generate a downloadable lossless image.
+
+### Local Browser Processing
+Process the secret message and image in the browser without uploading the secret content to a custom backend.
+
+### Error Handling
+Handle invalid files, insufficient capacity, incorrect passwords and corrupted payloads.
+
+Use restrained icons, short descriptions and consistent cards.
+
+Do not create fake live security telemetry, threat-detection counters or attack statistics.
+
+---
+
+## 13. SECTION SIX: REGISTRATION FORM
+
+SLA2 explicitly requires a registration form.
+
+Create a section called:
+
+“SecretPixel Project Demo Registration”
+
+This is a demonstration form, not a required account system for the core encryption functionality.
+
+Fields:
+- Full name
+- Email address
+- Purpose of registration
+- Optional academic or demonstration category
+- Required consent checkbox if collecting any personal information
+- Submit button
+
+Include:
+- Labels
+- Required-field validation
+- Email-format validation
+- Clear inline errors
+- Success feedback
+- Reset option
+
+Do not collect passwords for this form.
+
+Do not pretend to save registration data if no backend exists.
+
+If no backend is configured, clearly state that the form has been validated locally and that no registration was submitted to a server.
+
+Do not store personal information unnecessarily.
+
+---
+
+## 14. SECTION SEVEN: EVENTS AND SECURITY TESTING TABLE
+
+SLA2 requires a table, so create a polished section titled:
+
+“Security Testing & Validation”
+
+Use a real HTML table with semantic headers.
+
+Columns:
+- Test ID
+- Test Scenario
+- Expected Result
+- Actual Result
+- Status
+
+Include test scenarios:
+1. Valid message and supported image.
+2. Empty message.
+3. Missing password.
+4. Incorrect password confirmation.
+5. Insufficient image capacity.
+6. Successful extraction.
+7. Wrong password.
+8. Modified encrypted payload.
+9. Invalid image file.
+10. Mobile responsive layout.
+
+Do not mark untested scenarios as passed.
+
+Initially use a neutral “Not tested” state where appropriate.
+
+If the application runs a real test suite, populate actual results from that test suite.
+
+Use accessible status labels, not colour alone.
+
+Make the table horizontally scrollable on small screens.
+
+---
+
+## 15. SECTION EIGHT: MEDIA EMBEDDING
+
+SLA2 requires images, audio and video.
+
+Include an attractive section titled:
+
+“Explore the Technology”
+
+### Images
+Use a relevant original or properly licensed illustration showing the encryption and image-hiding workflow.
+
+Provide meaningful alternative text.
+
+### Video
+Embed a short project demonstration or explanatory video using a real HTML5 video element.
+
+Include:
+- Playback controls
+- Poster image
+- Accessible caption or description
+- A local media asset or a verified, appropriately hosted media source
+
+Do not invent a working video URL.
+
+If no actual video file is supplied, create the video element with a clearly documented local asset path and provide instructions for adding the real video file.
+
+### Audio
+Include an optional project narration using an HTML5 audio element with controls.
+
+Use a real local audio asset if available.
+
+If no audio asset is supplied, clearly document the expected asset path rather than pretending audio exists.
+
+Keep media controls visually consistent with the dark theme.
+
+Do not autoplay audio or video with sound.
+
+---
+
+## 16. SECTION NINE: ABOUT AND PROJECT INFORMATION
+
+Create an elegant About section explaining the educational purpose of SecretPixel.
+
+Include:
+- Project title
+- Subject: Cryptography and Network Security
+- Academic year: 2026–2027
+- Project domain
+- Objectives
+- Technologies used
+- Expected outcome
+- Limitations
+
+Use the following student and institution details only where needed for the project presentation:
+
+Institution: Shah and Anchor Kutchhi Engineering College
+
+Project team:
+- Khushi Koli
+- Jayshri Shinde
+
+Do not invent faculty names, guide names, institutional endorsements or certifications.
+
+Add a small “Educational Prototype” label.
+
+Explain the distinction between cryptography and steganography in beginner-friendly language.
+
+Include a comparison card:
+
+Cryptography:
+Makes message contents unreadable without the appropriate key.
+
+Steganography:
+Attempts to conceal the existence of the message within another medium.
+
+Combined:
+Encrypt first, then hide the ciphertext inside the image.
+
+---
+
+## 17. SECTION TEN: RESPONSIVE DESIGN
+
+The website must work correctly at:
+- 360px mobile width
+- 390px mobile width
+- 768px tablet width
+- 1024px laptop width
+- 1440px desktop width
+
+Requirements:
+- No horizontal overflow except intentionally scrollable tables.
+- No clipped headings.
+- No overlapping cards.
+- No inaccessible dropdowns.
+- No buttons too small to tap.
+- No forms that extend beyond the viewport.
+- Proper image scaling.
+- A usable mobile navigation menu.
+- Responsive feature grids.
+- A stacked encryption workspace on narrow screens.
+- Readable text without unnecessary zooming.
+
+Use CSS Grid, Flexbox and media queries appropriately.
+
+---
+
+## 18. SECTION ELEVEN: ACCESSIBILITY AND USER EXPERIENCE
+
+Follow practical accessibility standards.
+
+- Use semantic HTML5.
+- Associate every input with a label.
+- Add descriptive alternative text to informative images.
+- Provide keyboard-operable navigation.
+- Add visible focus indicators.
+- Use sufficient text contrast.
+- Announce important status changes through accessible live regions where appropriate.
+- Do not rely on colour alone to communicate success or failure.
+- Respect reduced-motion preferences.
+- Avoid flashing animations.
+- Ensure error messages explain how to fix the problem.
+- Keep primary actions visually obvious.
+- Make the website understandable without requiring prior cryptography knowledge.
+
+The user should always understand:
+1. What step they are on.
+2. What information they must enter.
+3. What will happen when they click a button.
+4. Whether the operation succeeded.
+5. What to do if it fails.
+
+---
+
+## 19. INTERACTION AND ANIMATION DETAILS
+
+Implement subtle, premium interactions.
+
+- Smooth anchor scrolling.
+- Button hover and press states.
+- Animated navigation underline or active indicator.
+- Image upload drag-over state.
+- Fade-in transitions for newly displayed sections.
+- Animated capacity progress bar.
+- Subtle card elevation on hover.
+- Smooth password visibility toggle.
+- Polished loading indicators.
+- Toast feedback for copy and download actions.
+- Clear validation states.
+- Respect reduced-motion settings.
+
+Do not animate every element.
+
+Do not add decorative interactions that make the website slower or confusing.
+
+Do not simulate encryption progress if the underlying operation cannot report progress.
+
+---
+
+## 20. TECHNICAL IMPLEMENTATION AND FILE STRUCTURE
+
+Prefer a straightforward implementation with:
+
+- index.html
+- style.css
+- script.js
+- assets/
+- README.md
+
+Use vanilla HTML, CSS and JavaScript for a simple GitHub Pages deployment unless the development environment requires a framework.
+
+If using React or another framework, provide all necessary source files and build configuration.
+
+Avoid unnecessary dependencies.
+
+Use clear functions and separation of responsibilities.
+
+Recommended JavaScript modules or functions:
+- validateMessage()
+- validatePassword()
+- validateImage()
+- deriveKey()
+- encryptMessage()
+- buildPayload()
+- calculateCapacity()
+- embedPayload()
+- extractPayload()
+- decryptMessage()
+- downloadStegoImage()
+- renderImagePreview()
+- updateStatus()
+- validateRegistrationForm()
+
+These functions should have meaningful implementations, not empty placeholders.
+
+Use reusable components or helper functions where appropriate.
+
+Avoid duplicating encryption and payload-parsing logic.
+
+Handle rejected promises and decoding errors safely.
+
+Do not expose secret information in console logs.
+
+---
+
+## 21. GITHUB PAGES DEPLOYMENT
+
+The finished project must be suitable for GitHub Pages.
+
+Requirements:
+- Provide a complete source-code structure.
+- Ensure relative asset paths work from a repository subdirectory.
+- Avoid dependence on server-side routes.
+- Do not require a private API key.
+- Do not assume a backend exists.
+- Use browser-supported APIs.
+- Ensure the application works from its deployed HTTPS origin.
+- Include a README with setup, features, technologies, limitations and deployment instructions.
+
+Explain how to:
+1. Create the GitHub repository.
+2. Upload the source files.
+3. Open repository Settings.
+4. Configure GitHub Pages to deploy from the main branch and root directory, or use the appropriate framework build output.
+5. Open the published URL.
+6. Test the deployed encryption and extraction workflows.
+
+Do not fabricate a live deployment URL.
+
+---
+
+## 22. TESTING AND ACCEPTANCE CRITERIA
+
+Before considering the project complete, verify the following.
+
+### Core functionality
+- A valid message can be encrypted.
+- A real payload is embedded into the cover image.
+- The generated PNG is downloadable.
+- The payload survives saving and reloading the PNG.
+- The hidden message can be extracted from the downloaded image.
+- The correct password recovers the original message.
+- A wrong password does not reveal the plaintext.
+- Modified ciphertext fails authentication.
+- An oversized payload is rejected.
+- Invalid files produce helpful errors.
+- The application can start a fresh operation after success or failure.
+
+### Frontend
+- All navigation links work.
+- All buttons perform their advertised actions.
+- Registration validation works.
+- The testing table renders correctly.
+- Image previews update when files change.
+- Copy and download buttons work.
+- Media controls function when valid assets are supplied.
+- Mobile layouts remain usable.
+- No critical browser-console errors occur.
+
+### Security and reliability
+- The browser generates random cryptographic values using secure APIs.
+- Key derivation and encryption use supported Web Crypto functions.
+- IVs are not reused with the same key.
+- The payload parser validates lengths and offsets.
+- Secret content is not transmitted to an external service.
+- Sensitive values are not stored persistently.
+- Authentication failures never display plaintext.
+
+If any test has not been executed, report it as untested rather than passing.
+
+---
+
+## 23. FINAL DESIGN QUALITY BAR
+
+The final product should look like a real cybersecurity privacy tool created by a professional product team.
+
+Prioritize:
+1. Exceptional visual polish.
+2. A distinctive SecretPixel brand.
+3. Clear information hierarchy.
+4. A beautiful and usable encryption workspace.
+5. A beautiful and usable extraction workspace.
+6. Genuine functionality.
+7. Consistent responsive behaviour.
+8. Honest security communication.
+9. Accessibility.
+10. Maintainable code.
+
+Use deliberate whitespace, refined alignment, beautiful gradients, high-quality iconography and carefully designed interaction states.
+
+Avoid generic templates, oversized unnecessary headings, excessive glassmorphism, distracting neon, fake data and cluttered dashboards.
+
+Do not sacrifice usability for appearance.
+
+---
+
+## 24. FINAL INSTRUCTIONS TO THE AI STUDIO CODING AGENT
+
+First, inspect the existing project files and development environment, if any.
+
+Then implement the complete SecretPixel frontend.
+
+Do not stop after generating the hero section.
+
+Do not return only a design description or code snippets.
+
+Create the actual working application in the available project workspace.
+
+Prioritize this implementation order:
+1. Complete visual design system and navigation.
+2. Landing page and explanatory sections.
+3. Hide-message interface.
+4. Genuine AES encryption and LSB embedding.
+5. Extract-message interface and authenticated decryption.
+6. Validation and error handling.
+7. Registration form and security testing table.
+8. Images, video and audio sections.
+9. Responsive layout and accessibility.
+10. README and GitHub Pages deployment instructions.
+
+If the environment supports live preview, launch the application and inspect it.
+
+Fix obvious layout problems, broken links, missing assets, non-functional controls and runtime errors.
+
+If the environment supports automated tests, test the encryption and extraction workflow, including wrong-password and insufficient-capacity cases.
+
+At the end, provide:
+- A summary of implemented features.
+- The source files created or modified.
+- A clear list of functionality that was genuinely tested.
+- Any remaining limitations or missing media assets.
+- Exact instructions to run and deploy the project.
+
+**The desired result is a beautiful, premium, professional cybersecurity web application called SecretPixel that satisfies the SLA2 website requirements while faithfully implementing the AES-based image steganography workflow described in the SLA1 project report.**
